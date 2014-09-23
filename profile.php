@@ -6,12 +6,12 @@
 </style>
 
 <?php include('script-includes.php');?>
-                
-  <div class="ui pointing secondary demo menu">
-    <a class="active red item" data-tab="me"><i class="home icon"></i> Me</a>
-    <a class="blue item" data-tab="credentials"><i class="mail icon"></i> Credentials</a>
-    <a class="green item" data-tab="kids"><i class="user icon"></i> Kids</a>
-  </div>
+
+    <div class="ui menu demo menu">
+      <a class="active item link_page" data-tab="me"><i class="home icon"></i> Me</a>
+      <a class="item" data-tab="credentials"><i class="mail icon"></i> Credentials</a>
+      <a class="item" data-tab="kids"><i class="user icon"></i> Kids</a>
+    </div>
 
   <div class="content_view">
   <!-- Me Section start here -->

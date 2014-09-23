@@ -8,8 +8,8 @@ $home = Constants::getHome();
 <div id="banner-container">
     <div id="banner">
 		<div class="ui menu">
-			<a class="active item link_page" id="prof_feed"><i class="user icon"></i> Profile</a>
-			<a class="item"><i class="home icon"></i> Home</a>
+			<a class="active item link_page" id="prof_feed">Profile</a>
+			<a class="item">Home</a>
 
 			<div class="ui dropdown item">
 			<i class="users icon"></i><i class="dropdown icon"></i>

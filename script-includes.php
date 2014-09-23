@@ -1,6 +1,9 @@
 <link href="css/main.css" rel="stylesheet" />
 <script src="js/jquery/jquery.js"></script>
+
 <script src="js/jquery/plugins/storify/jquery.storify.js"></script>
+
+
 <link href="js/jquery/plugins/storify/jquery.storify.css" rel="stylesheet" />
 <link href="js/semantic/css/semantic.css" rel="stylesheet" />
 
