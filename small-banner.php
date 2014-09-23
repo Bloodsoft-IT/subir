@@ -7,10 +7,8 @@ $home = Constants::getHome();
 
 <div id="banner-container">
     <div id="banner">
-		<div class="ui inverted menu">
-			<a id="logo" class="header item"></a>
-
-			<a class="item link_page" id="prof_feed"><i class="user icon"></i> Profile</a>
+		<div class="ui menu">
+			<a class="active item link_page" id="prof_feed"><i class="user icon"></i> Profile</a>
 			<a class="item"><i class="home icon"></i> Home</a>
 
 			<div class="ui dropdown item">
@@ -21,14 +19,12 @@ $home = Constants::getHome();
 					<a class="item"><i class="setting icon"></i> Friend Requests</a>
 				</div>
 			</div>
-
-			<a class="item"><i class="settings icon"></i></a>
-
+		
 			<div class="right menu">
 				<div class="item">
 					<div class="ui icon input">
-					<input placeholder="Search..." type="text">
-					<i class="search link icon"></i>
+						<input placeholder="Search..." type="text">
+						<i class="search link icon"></i>
 					</div>
 				</div>
 			</div>
