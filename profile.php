@@ -8,7 +8,14 @@
     text-align: center;
     margin-top:20px;
   }
+
+  .bar {
+    height: 18px;
+    background: green;
+}
 </style>
+
+
 
 <?php include('script-includes.php');?>
 
@@ -35,18 +42,21 @@
                 <div class="ui form segment">
 
                   <div class="two fields">
+                    
                     <div class="field">
                       <label>Upload profile picture</label>
                       <label for="file" class="ui icon button">
                       <i class="add icon"></i>Select file
                       </label>
-                      <input type="file" id="file" style="display:none">
+                      <input type="file" id="file" name="files[]" style="display:none;" multiple>
                     </div>
+
                     <div class="field">
-                      <div class="ui successful progress" style="margin-top:25px;">
+                      <div id="progress" class="ui successful progress" style="margin-top:25px;">
                         <div class="bar" style="width:100%"></div>
                       </div>
                     </div>
+                    
                   </div>
 
                   <div class="field">
@@ -164,10 +174,11 @@
   </div>
 
 
+
 <script type="text/javascript">
   $( document ).ready(function() {
-    $('.demo.menu .item').tab();
 
+    $('.demo.menu .item').tab();
     $('.ui.selection.dropdown').dropdown();
 
   });

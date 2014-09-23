@@ -14,8 +14,13 @@
 
 <script src="js/semantic/javascript/semantic.min.js"></script>
 <script src="js/semantic/javascript/semantic.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+<script src="js/jquery/jquery.address.js"></script>
 <script src="js/semantic/javascript/menu.js"></script>
 <script src="js/semantic/javascript/semantic-with-dropdown.js"></script>
 <link rel="stylesheet" href="js/jquery/jquery-ui.css">
 <script src="js/jquery/jquery-ui.js"></script><!-- 1.11.1 -->
+
+
+<script src="js/jquery/plugins/fileupload/jquery.ui.widget.js"></script>
+<script src="js/jquery/plugins/fileupload/jquery.iframe-transport.js"></script>
+<script src="js/jquery/plugins/fileupload/jquery.fileupload.js"></script>
