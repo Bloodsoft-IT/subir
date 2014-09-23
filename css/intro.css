@@ -1,0 +1,12 @@
+body#mybody {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; 
+    text-align: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0px;
+    background-color: #e67e22;
+}

@@ -1,0 +1,129 @@
+.storify .large-story {
+    background-color: #fff;
+    width: 705px;
+    padding: 20px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.storify .large-story .header {
+    text-align: left;
+}
+
+.storify .large-story .header .user-container {
+    height: 50px;
+}
+
+.storify .large-story .header .user-container .user-image {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.storify .large-story .header .user-container .user {
+    cursor: pointer;
+    width: 610px;
+    height: 30px;
+    float: right;
+    line-height: 30px;
+    padding: 10px;
+    color: #196387;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.storify .large-story .header .description {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    max-height: 80px;
+    padding: 0px;
+}
+
+.storify .large-story .image-container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.storify .large-story .image-container .image {
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 705px;
+    height: 300px;
+    background-size: 705px 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.storify .large-story .icons {
+}
+
+.storify .large-story .icons .icon {
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+}
+
+.storify .large-story .comments-container {
+    text-align: left;
+}
+
+.storify .large-story .comments-container .comment {
+    margin-bottom: 20px;
+}
+
+.storify .large-story .comments-container .comment .header {
+    height: 50px;
+}
+
+.storify .large-story .comments-container .comment .header .image {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.storify .large-story .comments-container .comment .header .user {
+    cursor: pointer;
+    width: 610px;
+    height: 30px;
+    float: right;
+    line-height: 30px;
+    padding: 10px;
+    color: #196387;
+    font-weight: bold;
+}
+
+.storify .large-story .comments-container .comment .description {
+    margin-left: 85px;
+}
+
+.storify .large-story .new-comment-container {
+}
+
+.storify .large-story .new-comment-container .new-comment-area {
+    width: 555px;
+    height: 78px;
+    float: left;
+    padding: 10px;
+}
+
+.storify .large-story .new-comment-container .new-comment-button {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    float: right;
+}
+
+.storify .large-story .new-comment-container .new-comment-button:hover {
+}

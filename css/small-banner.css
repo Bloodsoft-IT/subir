@@ -1,0 +1,22 @@
+/*#banner-container {
+    margin: 0px;
+    padding: 10px 0px 10px 100px;
+    background-color: #000;
+}
+#banner {
+    cursor: pointer;
+    width: 50px;
+	line-height: 30px;
+	font-size: 30px;
+    height: 48px;
+    background-image: url('../media/images/small-logo.png');
+    background-repeat: no-repeat;
+}
+*/
+
+#logo{
+    background-image: url('../media/images/small-logo.png');
+    background-repeat: no-repeat; 
+    height: 48px;
+    width: 50px;
+}

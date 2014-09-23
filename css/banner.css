@@ -1,0 +1,14 @@
+#banner-container {
+    margin: 0px;
+    padding: 10px 0px 10px 100px;
+    background-color: #000;
+}
+#banner {
+    cursor: pointer;
+    width: 200px;
+	line-height: 30px;
+	font-size: 30px;
+    height: 86px;
+    background-image: url('../media/images/banner.png');
+    background-repeat: no-repeat;
+}
