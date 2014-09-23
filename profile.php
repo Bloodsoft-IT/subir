@@ -15,7 +15,7 @@
 }
 </style>
 
-
+Hello
 
 <?php include('script-includes.php');?>
 
@@ -56,7 +56,7 @@
                         <div class="bar" style="width:100%"></div>
                       </div>
                     </div>
-                    
+
                   </div>
 
                   <div class="field">
