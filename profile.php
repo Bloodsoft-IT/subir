@@ -3,6 +3,11 @@
     margin-top:-20px;
     border:none;
   }
+
+  #cs{
+    text-align: center;
+    margin-top:20px;
+  }
 </style>
 
 <?php include('script-includes.php');?>
@@ -133,11 +138,16 @@
         </div>
       </div>
     </div>
-
-
-    
-
   </div>
+
+  <div id="cs">
+  <div class="ui buttons">
+    <div class="ui button">Cancel</div>
+    <div class="or"></div>
+    <div class="ui positive button">Save</div>
+  </div>
+  </div>
+
   </div>
 
   <div class="two wide column"></div>
