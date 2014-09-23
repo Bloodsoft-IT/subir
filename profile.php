@@ -15,8 +15,6 @@
 }
 </style>
 
-Hello
-
 <?php include('script-includes.php');?>
 
     <div class="ui menu demo menu">
