@@ -5,8 +5,6 @@
   }
 </style>
 
-Hello
-
 <?php include('script-includes.php');?>
                 
   <div class="ui pointing secondary demo menu">
