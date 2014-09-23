@@ -8,7 +8,7 @@
 <?php include('script-includes.php');?>
                 
   <div class="ui pointing secondary demo menu">
-    <a class="active red item" data-tab="me"><i class="home icon"></i> Me</a>
+    <a class="active red item" data-tab="me"><i class="home icon"></i> Me @ My</a>
     <a class="blue item" data-tab="credentials"><i class="mail icon"></i> Credentials</a>
     <a class="green item" data-tab="kids"><i class="user icon"></i> Kids</a>
   </div>
