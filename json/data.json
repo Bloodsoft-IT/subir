@@ -1,0 +1,23 @@
+[
+	{
+		"id"		:1,
+		"image" 	: "./media/images/background1.jpg",
+		"name" 		: "Name 1",
+		"dob"		: "September 12 1927",
+		"gender"	: {
+			"male"		: "Male",
+			"female"	: "Female"
+		}
+	},
+
+	{
+		"id"		:2,
+		"image" 	: "./media/images/background2.jpg",
+		"name" 		: "Name 2",
+		"dob"		: "January 24 1955",
+		"gender"	: {
+			"male"		: "Male",
+			"female"	: "Female"
+		}
+	}
+]

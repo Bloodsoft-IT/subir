@@ -165,35 +165,51 @@
   </div><!-- Credentials Section start here -->
 
   <!-- kids Section start here -->
-  <div class="ui tab segment" data-tab="kids">
+  <div class="ui tab segment" data-tab="kids" ng-app="KIDS">
     <div class="ui grid">
       <div class="row">
         <div class="two wide column"></div>
-        <div class="twelve wide column">
+
+        <script type="text/javascript">
+          
+        angular.module('KIDS',[])
+        .controller('kidsCtrl', function($scope,$http){
+          $http.get("json/data.json").success(function(data){
+            $scope.kids = data;
+            console.log(data);
+          });
+        }); 
+    
+
+        </script>
+
+        <div class="twelve wide column" ng-controller="kidsCtrl">
           <div class="ui grid">
-            <div class="row">
+            <div class="row" ng-repeat="kid in kids"> 
+
               <div class="four wide column">
-                <img class="rounded ui image" src="media/images/background1.jpg">
+                <img class="rounded ui image" ng-src="{{ kid.image }}">
               </div>
               <div class="twelve wide column">
                 
-                <div class="ui form segment">
+                <div class="ui form">
 
                   <div class="field">
                     <label class="cblabel">Full Name</label>
                     <div class="ui large fluid icon input">
-                        <input placeholder="Full Name" type="text">
+                        <input placeholder="Full Name" type="text" value="{{ kid.name }}">
                         <i class="android icon"></i> 
                     </div>
                   </div>
 
                   <div class="field">
                     <label>Birth Date</label>
-                    <span class="ui green label">September</span>
-                    <span class="ui purple circular label">12</span>
-                    <span class="ui green label">1927</span>
+                    <span class="ui green label">{{ kid.dob }}</span>
+                    <!-- <span class="ui purple circular label">12</span>
+                    <span class="ui green label">1927</span> -->
                   </div>
                   
+                  <!--
                   <div class="field">
                     <label class="cblabel">I am a</label>
                     <div class="ui fluid selection dropdown">
@@ -201,10 +217,24 @@
                         <div class="default text" style="text-align:left;">Gender</div>
                         <i class="dropdown icon"></i>
                         <div class="menu">
-                            <div class="item"><i class="male icon"></i> Male</div>
-                            <div class="item"><i class="female icon"></i> Female</div>
+                            <div data-value="{{kid.id}}" class="item" ng-click="select(kid)">{{ kid.gender }}</div>
                         </div>
                     </div>
+                  </div>
+                  -->
+
+                  <div class="ui selection dropdown ">
+                  <input name="id" type="hidden" value="0"/>
+                  <div class="text">Gender</div>  <i class="dropdown icon"></i> 
+                    <div class="menu transition hidden">
+                      <div class="item active">-- Pick A Container --</div>
+                      <div class="item">{{kid.gender.male}}</div>
+                      <div class="item">{{kid.gender.female}}</div>
+                    </div>
+                  </div>
+
+                  <div class="ui horizontal icon divider">
+                    <i class="circular heart icon"></i>
                   </div>
 
                 </div>
@@ -223,9 +253,7 @@
 
 <script type="text/javascript">
   $( document ).ready(function() {
-
     $('.demo.menu .item').tab();
-    $('.ui.selection.dropdown').dropdown();
-
+    $('.ui.selection.dropdown').dropdown(); 
   });
 </script>

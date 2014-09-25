@@ -1,5 +1,10 @@
 <link href="css/main.css" rel="stylesheet" />
+
+<script src="js/angular/angular.min.js"></script>
+
 <script src="js/jquery/jquery.js"></script>
+<script src="js/semantic/javascript/semantic.min.js"></script>
+<script src="js/semantic/javascript/semantic.js"></script>
 
 <script src="js/jquery/plugins/storify/jquery.storify.js"></script>
 
@@ -12,8 +17,6 @@
 <script src="js/semantic/javascript/tablesort.js"></script>
 <script src="js/semantic/javascript/waypoints.js"></script>
 
-<script src="js/semantic/javascript/semantic.min.js"></script>
-<script src="js/semantic/javascript/semantic.js"></script>
 <script src="js/jquery/jquery.address.js"></script>
 <script src="js/semantic/javascript/menu.js"></script>
 <script src="js/semantic/javascript/semantic-with-dropdown.js"></script>
