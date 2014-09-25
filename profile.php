@@ -166,7 +166,55 @@
 
   <!-- kids Section start here -->
   <div class="ui tab segment" data-tab="kids">
-    Kids
+    <div class="ui grid">
+      <div class="row">
+        <div class="two wide column"></div>
+        <div class="twelve wide column">
+          <div class="ui grid">
+            <div class="row">
+              <div class="four wide column">
+                <img class="rounded ui image" src="media/images/background1.jpg">
+              </div>
+              <div class="twelve wide column">
+                
+                <div class="ui form segment">
+
+                  <div class="field">
+                    <label class="cblabel">Full Name</label>
+                    <div class="ui large fluid icon input">
+                        <input placeholder="Full Name" type="text">
+                        <i class="android icon"></i> 
+                    </div>
+                  </div>
+
+                  <div class="field">
+                    <label>Birth Date</label>
+                    <span class="ui green label">September</span>
+                    <span class="ui purple circular label">12</span>
+                    <span class="ui green label">1927</span>
+                  </div>
+                  
+                  <div class="field">
+                    <label class="cblabel">I am a</label>
+                    <div class="ui fluid selection dropdown">
+                    <input name="gender" type="hidden">
+                        <div class="default text" style="text-align:left;">Gender</div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <div class="item"><i class="male icon"></i> Male</div>
+                            <div class="item"><i class="female icon"></i> Female</div>
+                        </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="two wide column"></div>
+      </div>
+    </div>
   </div><!-- kids Section end here -->
 
   </div>
