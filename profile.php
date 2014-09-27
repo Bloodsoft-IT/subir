@@ -176,7 +176,6 @@
         .controller('kidsCtrl', function($scope,$http){
           $http.get("json/data.json").success(function(data){
             $scope.kids = data;
-            console.log(data);
           });
         }); 
     
@@ -203,53 +202,44 @@
                   </div>
 
                   <div class="field">
-                    <label>Birth Date</label>
+                    <label class="cblabel">Birth Date</label>
                     <span class="ui green label">{{ kid.dob }}</span>
                     <!-- <span class="ui purple circular label">12</span>
                     <span class="ui green label">1927</span> -->
                   </div>
-                  
-                  <!--
+
+
+
                   <div class="field">
-                    <label class="cblabel">I am a</label>
-                    <div class="ui fluid selection dropdown">
-                    <input name="gender" type="hidden">
-                        <div class="default text" style="text-align:left;">Gender</div>
-                        <i class="dropdown icon"></i>
-                        <div class="menu">
-                            <div data-value="{{kid.id}}" class="item" ng-click="select(kid)">{{ kid.gender }}</div>
-                        </div>
-                    </div>
-                  </div>
-                  -->
-
-                  <div class="ui selection dropdown ">
-                  <input name="id" type="hidden" value="0"/>
-                  <div class="text">Gender</div>  <i class="dropdown icon"></i> 
-                    <div class="menu transition hidden">
-                      <div class="item active">-- Pick A Container --</div>
-                      <div class="item">{{kid.gender.male}}</div>
-                      <div class="item">{{kid.gender.female}}</div>
-                    </div>
+                      <label class="cblabel">I am a</label>
+                      <div class="ui fluid selection dropdown">
+                            <input name="gender" type="hidden">
+                            <div data-value="{{kid.id}}" class="default text" style="text-align:left;"><img ng-src="{{kid.gender_img}}"></div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <div class="item"><i class="male icon"></i> Male</div>
+                                <div class="item"><i class="female icon"></i> Female</div>
+                            </div>
+                      </div>
                   </div>
 
+      
                   <div class="ui horizontal icon divider">
                     <i class="circular heart icon"></i>
                   </div>
 
                 </div>
-
               </div>
             </div>
           </div>
 
           <p><a href="" id="add_profile">Add Another Profile</a></p>
 
-          <div class="ui form" id = "add_another_profile" style="display:none;">
+          <div class="ui form" id = "add_another_profile" style="display:none;margin-bottom:50px;">
 
             <div class="field">
               <label class="cblabel">Full Name</label>
-              <div class="ui large fluid icon input">
+              <div class="ui icon input">
                   <input placeholder="Full Name" type="text">
                   <i class="android icon"></i> 
               </div>
@@ -257,7 +247,7 @@
 
             <div class="field">
               <label class="cblabel">Birth Date</label>
-              <div class="ui fluid icon input">
+              <div class="ui icon input">
                   <input placeholder = "Date of birth" type="text" id="dof">
                   <i class="calendar icon"></i>
               </div>
@@ -265,13 +255,13 @@
 
             <div class="field">
                 <label class="cblabel">I am a</label>
-                <div class="ui fluid selection dropdown">
+                <div class="ui selection dropdown">
                     <input name="gender" type="hidden">
                         <div class="default text" style="text-align:left;">Gender</div>
                         <i class="dropdown icon"></i>
                         <div class="menu">
-                            <div class="item"><i class="male icon"></i> Male</div>
-                            <div class="item"><i class="female icon"></i> Female</div>
+                            <div class="item"><img src="media/images/girl_dropdown.png"> Female</div>
+                            <div class="item"><img src="media/images/boy_dropdown.png"> Male</div>
                         </div>
                 </div>
             </div>
@@ -291,6 +281,8 @@
 <script type="text/javascript">
   $( document ).ready(function() {
 
+    $('.ui.selection.dropdown').dropdown(); 
+
     $('#add_profile').click(function(){
       $('#add_another_profile').show();
     });
@@ -301,6 +293,7 @@
     });
 
     $('.demo.menu .item').tab();
-    $('.ui.selection.dropdown').dropdown(); 
+
+    
   });
 </script>
