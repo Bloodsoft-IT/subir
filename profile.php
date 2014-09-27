@@ -165,6 +165,7 @@
   </div><!-- Credentials Section start here -->
 
   <!-- kids Section start here -->
+  <script src="js/angular/angular.min.js"></script>
   <div class="ui tab segment" data-tab="kids" ng-app="KIDS">
     <div class="ui grid">
       <div class="row">
@@ -233,7 +234,7 @@
             </div>
           </div>
 
-          <p><a href="" id="add_profile">Add Another Profile</a></p>
+          <p><a href="#" id="add_profile">Add Another Profile</a></p>
 
           <div class="ui form" id = "add_another_profile" style="display:none;margin-bottom:50px;">
 
@@ -285,6 +286,7 @@
 
     $('#add_profile').click(function(){
       $('#add_another_profile').show();
+      return false;
     });
     
     $( "#dof" ).datepicker({ 

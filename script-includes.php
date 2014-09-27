@@ -1,7 +1,5 @@
 <link href="css/main.css" rel="stylesheet" />
 
-<script src="js/angular/angular.min.js"></script>
-
 <script src="js/jquery/jquery.js"></script>
 <script src="js/semantic/javascript/semantic.min.js"></script>
 <script src="js/semantic/javascript/semantic.js"></script>
