@@ -216,7 +216,7 @@
                     
                     <div class="ui selection dropdown added_gender">
                         <input name="id" type="hidden" value="0"/>
-                        <div class="text"><img ng-src="{{kid.gender_img}}"></div>  <i class="dropdown icon"></i> 
+                        <div class="text" id="ase"><img ng-src="{{kid.gender_img}}"></div>  <i class="dropdown icon"></i> 
                         <div class="menu">
                             <div class="item"><img src="media/images/girl_dropdown.png"> Female</div>
                             <div class="item"><img src="media/images/boy_dropdown.png"> Male</div>
@@ -225,6 +225,11 @@
 
                     <script type="text/javascript">
                       $('.added_gender').dropdown(); 
+
+                      $('#add_gender').change(function(){
+                        var img_gen = $(this).find('img').attr('src');
+                        $('#ase').html('<img src = "' + img_gen + '">');
+                      });
                     </script>
 
                   </div>
@@ -261,9 +266,9 @@
 
             <div class="field">
                 <label class="cblabel">I am a</label>
-                <div class="ui selection dropdown">
+                <div class="ui selection dropdown" id = "add_another">
                     <input name="gender" type="hidden">
-                        <div class="default text" style="text-align:left;">Gender</div>
+                        <div class="default text" id="add_def" style="text-align:left;">Gender</div>
                         <i class="dropdown icon"></i>
                         <div class="menu">
                           <div class="item"><img src="media/images/girl_dropdown.png"> Female</div>
@@ -297,6 +302,12 @@
   $( document ).ready(function() {
 
     $('.ui.dropdown').dropdown(); 
+
+    $('#add_another').change(function(){
+      var img_gen = $(this).find('img').attr('src');
+      $('#add_def').html('<img src = "' + img_gen + '">');
+    });
+
 
     $('#add_profile').click(function(){
       $('#add_another_profile').show();
