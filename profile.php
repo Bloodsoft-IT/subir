@@ -261,11 +261,19 @@
                         <div class="default text" style="text-align:left;">Gender</div>
                         <i class="dropdown icon"></i>
                         <div class="menu">
-                            <div class="item"><img src="media/images/girl_dropdown.png"> Female</div>
-                            <div class="item"><img src="media/images/boy_dropdown.png"> Male</div>
+                          <div class="item"><img src="media/images/girl_dropdown.png"> Female</div>
+                          <div class="item"><img src="media/images/boy_dropdown.png"> Male</div>
                         </div>
                 </div>
             </div>
+
+
+            <div class="ui buttons">
+              <div class="ui button">Cancel</div>
+              <div class="or"></div>
+              <div class="ui positive button">Save</div>
+            </div>
+            
 
           </div>
 
