@@ -5,15 +5,23 @@
 		"name" 		: "Tomy",
 		"dob"		: "September 12 1927",
 		"gender"	: "Male",
-		"gender_img": "./media/images/boy_dropdown.png"
+		"gender_img": "./media/images/boy_dropdown.png",
+		"both":{
+			"id"	: 1,
+			"img"	:"./media/images/boy_dropdown.png"
+		}
 	},
 
 	{
-		"id"		:2,
+		"id"		: 2,
 		"image" 	: "./media/images/background2.jpg",
 		"name" 		: "Era",
 		"dob"		: "January 24 1955",
 		"gender"	: "Female",
-		"gender_img": "./media/images/girl_dropdown.png"
+		"gender_img": "./media/images/girl_dropdown.png",
+		"both":{
+			"id"	: 2,
+			"img"	:"./media/images/girl_dropdown.png"
+		}
 	}
 ]

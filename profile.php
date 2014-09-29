@@ -166,6 +166,7 @@
 
   <!-- kids Section start here -->
   <script src="js/angular/angular.min.js"></script>
+
   <div class="ui tab segment" data-tab="kids" ng-app="KIDS">
     <div class="ui grid">
       <div class="row">
@@ -204,24 +205,28 @@
 
                   <div class="field">
                     <label class="cblabel">Birth Date</label>
-                    <span class="ui green label">{{ kid.dob }}</span>
-                    <!-- <span class="ui purple circular label">12</span>
-                    <span class="ui green label">1927</span> -->
+                    <span class="ui green label">September</span>
+                    <span class="ui purple circular label">12</span>
+                    <span class="ui green label">1927</span>
                   </div>
 
 
 
                   <div class="field">
-                      <label class="cblabel">I am a</label>
-                      <div class="ui fluid selection dropdown">
-                            <input name="gender" type="hidden">
-                            <div data-value="{{kid.id}}" class="default text" style="text-align:left;"><img ng-src="{{kid.gender_img}}"></div>
-                            <i class="dropdown icon"></i>
-                            <div class="menu">
-                                <div class="item"><i class="male icon"></i> Male</div>
-                                <div class="item"><i class="female icon"></i> Female</div>
-                            </div>
-                      </div>
+                    
+                    <div class="ui selection dropdown added_gender">
+                        <input name="id" type="hidden" value="0"/>
+                        <div class="text"><img ng-src="{{kid.gender_img}}"></div>  <i class="dropdown icon"></i> 
+                        <div class="menu">
+                            <div class="item"><img src="media/images/girl_dropdown.png"> Female</div>
+                            <div class="item"><img src="media/images/boy_dropdown.png"> Male</div>
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                      $('.added_gender').dropdown(); 
+                    </script>
+
                   </div>
 
       
@@ -273,11 +278,12 @@
               <div class="or"></div>
               <div class="ui positive button">Save</div>
             </div>
-            
+
 
           </div>
 
         </div>
+
         <div class="two wide column"></div>
       </div>
     </div>
@@ -290,7 +296,7 @@
 <script type="text/javascript">
   $( document ).ready(function() {
 
-    $('.ui.selection.dropdown').dropdown(); 
+    $('.ui.dropdown').dropdown(); 
 
     $('#add_profile').click(function(){
       $('#add_another_profile').show();
